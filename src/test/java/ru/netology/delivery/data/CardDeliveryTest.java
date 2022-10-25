@@ -2,7 +2,6 @@ package ru.netology.delivery.data;
 
 import com.codeborne.selenide.Selenide;
 
-import lombok.SneakyThrows;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -14,7 +13,7 @@ import java.time.Duration;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
-import static java.nio.channels.Selector.open;
+
 
 public class CardDeliveryTest {
     @BeforeEach
