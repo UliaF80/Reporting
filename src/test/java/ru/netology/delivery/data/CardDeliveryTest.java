@@ -17,11 +17,13 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class CardDeliveryTest {
     @BeforeEach
-    void setup() {Selenide.open("http://localhost:9999");}
+    void setup() {
+        Selenide.open("http://localhost:9999");
+    }
 
     @Test
     @DisplayName("Should successful plan meeting")
-        void shouldSuccessfulPlanMeeting(){
+    void shouldSuccessfulPlanMeeting() {
         DataGenerator.UserInfo validUser = DataGenerator.Registration.generateUser("ru");
         int daysToAddForFirstMeeting = 4;
         String firstMeetingDate = DataGenerator.generateDate(daysToAddForFirstMeeting);
